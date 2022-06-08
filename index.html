@@ -3,8 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
 <body>
-
+    <nav>
+        <div class="nav-center">
+            <h4>DJ Board</h4>
+            <audio src="" id="remix"></audio>
+            <i class="fi fi-rr-music-alt" id="tyga"></i>
+            <i class="fi fi-sr-music-alt" id="first"></i>
+            <i class="fi fi-br-music-alt" id="second"></i>
+            <i class="fi fi-br-pause" id="pause"></i>
+        </div>
+    </nav>
+    <main>
+        <div class="background">
+            <div class="background-video">
+                <div class="btn-container">
+                    <div id="btn-left">
+                        <i class="fi fi-rr-angle-left"></i>
+                    </div>
+                    <div class="apple-music-screen">
+                        <div class="video">
+                            <video src="assets/frog_dance.mp4"
+                                   muted
+                                   id="video"
+                                   autoplay
+                                   width="120px"
+                                   height="70px"
+                                   style="margin: 0; padding: 0">
+                            </video>
+                        </div>
+                        <div id="track-name">
+                        </div>
+                        <audio src="assets/Mo%20bamba.mp3" id="audio"></audio>
+                        <div class="changer">
+                            <i class="fi fi-sr-rewind" id="prev-track"></i>
+                            <i class="fi fi-br-play" id="music-play"></i>
+                            <i class="fi fi-sr-forward" id="next-track"></i>
+                        </div>
+                        <div class="progress-bar">
+                            <input type="range" id="progressBar" min="0" max="" value="0" />
+                        </div>
+                        <div class="track-time">
+                            <div id="currentTime"></div>
+                            <div id="durationTime"></div>
+                        </div>
+                    </div>
+                    <div id="btn-right">
+                        <i class="fi fi-rr-angle-right"></i>
+                    </div>
+                </div>
+                <video src="assets/drake_dance.mp4"
+                       muted
+                       id="background-video"
+                       autoplay
+                       width="100%"
+                       style="margin: 0; padding: 0; filter: blur(10px)">
+                </video>
+            </div>
+        </div>
+    </main>
+    <!-- javascript -->
+    <script src="app.js"></script>
 </body>
 </html>
